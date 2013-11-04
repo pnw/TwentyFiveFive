@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 accomplishments.db
-=======
 *.py[cod]
 
 # C extensions
@@ -37,4 +35,3 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
->>>>>>> 1bbef3e9f2b5e4862453a9f7168b990a65ac02bb
