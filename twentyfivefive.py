@@ -487,7 +487,8 @@ def receive(message):
                 )
             i += 1
     except KeyboardInterrupt:
-        print('\n\n{}ing for {} minutes\n\n'.format(action, minutes))
+        print('\n\n{}ing for {} minutes. Current time is {}\n\n'.format(
+            action, minutes, datetime.datetime.now().strftime(strf)))
 
     return True
 
