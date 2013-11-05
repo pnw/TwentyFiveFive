@@ -471,8 +471,7 @@ def receive(message):
     seconds = message['length']
     minutes = round(seconds / 60., 2)
 
-    if action.lower() in REST_ACTIONS:
-        register_accomplishment()
+
     try:
         i = 0
         while True:
@@ -487,6 +486,8 @@ def receive(message):
                 )
             i += 1
     except KeyboardInterrupt:
+        if action.lower() in REST_ACTIONS:
+            register_accomplishment()
         print('\n\n{}ing for {} minutes. Current time is {}\n\n'.format(
             action, minutes, datetime.datetime.now().strftime(strf)))
 
